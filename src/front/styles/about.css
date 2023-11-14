@@ -1,0 +1,152 @@
+/* Contenedor de información "Acerca de" */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+/* Contenido de "Acerca de" */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Imagen en "Acerca de" */
+.about-img img {
+  border: none;
+  box-shadow: none;
+  transition: none;
+  transform: none;
+}
+
+.about-img {
+  display: block;
+}
+
+/* Texto en "Acerca de" */
+.about-text {
+  padding-left: 10px;
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+  flex: 1;
+}
+
+.about-text span {
+  color: #0ef;
+}
+
+/* Servicios */
+.services {
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+/* Lista de servicios */
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  grid-gap: 20px;
+  margin-top: 50px;
+}
+
+/* Título de servicios */
+.services-title {
+  text-align: center;
+}
+
+.services-title span {
+  color: #0ef;
+}
+
+/* Elemento individual de la lista de servicios */
+.services-list div {
+  background: transparent;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background 0.5s, transform 0.5s;
+  box-shadow: 2px 2px 25px #4bafbdf7, 1px 1px 40px #4ef7e9f7;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.services-list div i {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.services-list div h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.services-list div p {
+  flex: 1;
+}
+
+.services-list div a {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Botón "Leer más" */
+.read-more {
+  margin-left: 10px;
+  color: #000;
+  display: inline-block;
+  padding: 10px 15px;
+  background: #0ef;
+  border-radius: 40px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 1;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Estilo al pasar el mouse sobre "Leer más" */
+.read-more:hover {
+  color: black;
+  box-shadow: 0 0 5px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 100px cyan, 0 0 200px cyan !important;
+}
+
+/* Estilo al hacer clic en "Leer más" */
+.read-more:active {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan !important;
+}
+
+/* Efecto al pasar el mouse sobre un elemento de la lista de servicios */
+.services-list div:hover {
+  transform: translateY(-10px);
+}
+
+/* Consulta de medios para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .about-container {
+    margin-left: 20px;
+  }
+
+  .services-list div {
+    padding: 15px;
+  }
+
+  .read-more {
+    font-size: 14px;
+  }
+}

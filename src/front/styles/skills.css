@@ -1,0 +1,193 @@
+body {
+  background-image: url('https://wallpaperaccess.com/full/3046059.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+span {
+  color: #0ef;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.container1 {
+  width: 400px;
+  height: 500px;
+  padding: 40px 30px;
+  margin-left: 30px;
+}
+
+.heading1 {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-top: 60px;
+}
+
+.bar {
+  justify-content: center;
+  width: calc(50% - 20px);
+  margin: 10px; 
+}
+
+.progress-container {
+  width: 100%;
+  height: 5px; 
+  background-color: black;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.progress-line-blue {
+  position: absolute;
+  height: 100%;
+  background-color: #0ef; 
+  border-radius: 10px;
+  animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+  transform-origin: left;
+}
+
+.Technical-bars .bar {
+  justify-content: center;
+  margin-top: 30px;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 0;
+  padding-left: 5%;
+}
+
+.bar .info {
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.progress-line {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  position: relative;
+}
+
+.progress-line span {
+  position: absolute;
+  height: 100%;
+  background-color: #0ef;
+  border-radius: 10px;
+  animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+  transform-origin: left;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.Technical-bars .bar .progress-line span {
+  height: 100%;
+  background-color: #0ef;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: calc(50% - 10px); 
+  margin-right: 10px;
+}
+
+.svg {
+  font-size: 300px 300px;
+}
+
+.radial-bars {
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.radial-bars .radial-bar {
+  width: 50%;
+  height: 170%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.radial-bars .radial-bar svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 120px;
+  height: 160px;
+}
+
+.progress-bar {
+  stroke-width: 10;
+  stroke: #000;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.path {
+  height: 100%;
+  background-color: #0ef;
+  stroke: #0ef;
+  fill: transparent;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.percentage-text {
+  font-size: 24px;
+  fill: #000;
+}
+
+.fill-animation {
+  stroke-dashoffset: 0;
+}
+
+.porcentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.5s 1s linear;
+}
+.fa-html5, .fa-css3, .fa-js, .fa-python, .fa-react,
+.fa-tasks, .fa-comments {
+  font-size: 10em; 
+}
+
+.fa-tasks{
+  font-size: 10em;
+}
+
